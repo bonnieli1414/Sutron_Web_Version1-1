@@ -1,0 +1,110 @@
+footer {
+    background-color: $footer-bg-primary;
+    color: $footer-text-primary;
+    font-size: 16px;
+    line-height: 24px;
+    a {
+        color: $footer-text-primary;
+        &:hover {
+            color:$footer-text-primary--hover;
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 12px 32px 12px;
+        @include pad {
+            gap: 72px;
+            padding: 50px 24px 32px 24px;
+        }
+        @include mobile {
+            max-width: $container-sm;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            padding-top: 40px;
+        }
+    }
+    .box-primary {
+        width: 40%;
+        // margin: 0 auto;
+        @include pad {
+            width: 60%;
+            margin: 0 auto;
+        }
+        @include mobile{
+            width: 100%;
+            margin: 0 auto;
+            padding: 24px 0;
+            border-bottom: 1px solid #000;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .list-contact {
+        padding: 24px 56px 12px 92px;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 0;
+        }
+    }
+    .list-contact-item {
+        padding: 16px 0;
+    }
+    .img-contact {
+        width: 36px; 
+        height: 36px;
+        @include mobile {
+            width: 24px; 
+            height: 24px;
+        }
+    }
+    .img-contact-phone {
+        background-color: $footer-text-primary;
+        -webkit-mask: url("../image/smartphone.png") no-repeat center center;
+        mask: url("../image/smartphone.png") no-repeat center center;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+    }
+    .img-contact-mail {
+        background-color: $footer-text-primary;
+        -webkit-mask: url("../image/mail.png") no-repeat center center;
+        mask: url("../image/mail.png") no-repeat center center;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+    }
+    .box-secondary {
+        display: flex;
+        gap: 36px;
+        @include pad{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 42px;
+        }
+        @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 0px;
+        }
+    }
+    ul {
+        @include mobile {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+    .list-menu-child  a {
+        padding: 10px 0;
+    }
+    // .d-sm-none {
+    //     @include mobile{
+    //         display: none;
+    //     }
+    // }
+}

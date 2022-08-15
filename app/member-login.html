@@ -1,0 +1,37 @@
+---
+title: 聯絡資訊
+layout: ./app/layout.ejs
+engine: ejs
+current: member-login
+---
+<nav>
+    <ul class="nav-current">
+        <li class="nav-member-item"><a href="./member-login.html">會員登入</a></li>
+        <li class="nav-member-item"><a href="./member-register.html">會員註冊</a></li>
+        <li class="nav-member-item"><a href="./member-getPassword.html">忘記密碼</a></li>
+        <li class="nav-member-item"><a href="./member-changePassword.html">修改密碼</a></li>
+    </ul>
+</nav>
+<div class="page-login">
+    <div class="container">
+        <form class="member" action="#">
+            <img src="./assets/image/ingo.ico" alt="">
+            <h3 class="ta-c">會員登入</h3>
+            <ul>
+                <li>
+                    <label for="email">電子信箱</label><br>
+                    <input class="member-input" type="email" name="email" id="email" placeholder="xxx@gmail.com">
+                </li>
+                <li>
+                    <label for="password">密碼</label><br>
+                    <input class="member-input" type="password" name="password" id="password" placeholder="英數字混合6~12位密碼">
+                </li>
+                <li class="ta-c">
+                    <input type="submit" class="member-input btn btn-secondary" value="登入">
+                </li>
+            </ul>
+            <p class="code"><a href="./member-getPassword.html">忘記密碼？</a></p>
+            <p class="btn btn-secondary"><a class="btn-form" href="./member-register.html">還不是會員嗎？點我註冊</a></p>
+        </form>
+    </div>
+</div>

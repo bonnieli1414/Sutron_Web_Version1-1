@@ -1,0 +1,122 @@
+.nav-index-item {
+    width: 33.33333%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #DEE2E6;
+    a:hover {
+        color: $nav-menu-text-primary--hover;
+    }
+}
+
+.page-index{
+    .banner {
+        background-image: url("../image/index_Sutron.jpg");
+        @include image-replaces-text;
+    }
+    .container {
+        padding: 60px 20px 48px 20px;
+        @include pad {
+            padding: 54px 50px 48px 50px;
+        }
+        @include mobile {
+            padding: 48px 60px 48px 60px;
+        }
+    }
+    h2 {
+        text-align: center;
+    }
+    .ingo {
+        background: $section-bg-primary;
+    }
+    .server {
+        background: $section-bg-secondary;
+        .container{
+            padding: 36px 20px;
+        }
+        li {
+            padding: 0 20px;
+            @include mobile {
+                padding: 20px 10px;
+            }
+        }
+    }
+    .slogan {
+        text-align: center;
+        text-indent: 16rem;
+        padding: 48px 0;
+        @include pad {
+            text-indent: 10rem;
+            padding: 36px 0;
+        }
+        @include mobile {
+            text-indent: 0rem;
+            padding: 24px 0;
+        }
+    }
+    span {
+        display: inline-block;
+        text-indent: 0.5rem;
+    }
+}
+
+.page-about {
+    .banner {
+        background-image: url("../image/about1.jpg");
+        height: 300px;
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+        @include banner;
+    }
+    h1 {
+        color: #fff;
+    }
+    ul {
+        @include mobile {
+            flex-direction: column;
+            padding: 20px;
+        }
+    }
+}
+
+.page-news {
+    .banner {
+        background-image: url("../image/news1.jpg");
+        height: 300px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10%;
+        @include banner;
+    }
+    h1 {
+        color: #fff;
+    }
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 12px 200px 12px;
+        @include mobile {
+            flex-direction: column;
+            padding: 20px 24px 200px 24px;
+        }
+    }    
+    thead {
+        @include mobile {
+            display: none;
+        }
+    }
+    th {
+        padding: 10px 30px;
+    }
+    tr {
+        text-align: center;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 14px 0;
+        }
+    }
+}
