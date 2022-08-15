@@ -57,8 +57,7 @@ p {
     height: 50px;
     text-align: center;
     &:hover {
-        // opacity: 0.7;
-        color: darken($logo-color--hover, 50%);
+        opacity: 0.7;
     }
 }
 .nav-current {
